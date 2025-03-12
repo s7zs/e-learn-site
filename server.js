@@ -1,18 +1,24 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 5000;;
-
 const path = require('path');
+const  { logger } = require('./middleware/logger.js')
+const port = process.env.PORT || 5500;
+
+app.use(logger)
 
 
+app.use(express.json())
 app.use('/', express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => console.log(`  server running on port ${port}`));
 const rootrouter= require('./routers/root.js');
 app.use('/', rootrouter);
 
-/*
-app.all('*', (req,res) => {
+
+    
+app.listen(port, () => console.log(`Server running on port ${port}`));
+
+app.all('*', (req, res) => {
     res.status(404);
 
     if(req.accepts('html')){
@@ -24,5 +30,3 @@ app.all('*', (req,res) => {
     }
     
 })
-    */
-app.listen(port, () => console.log(`Server running on port ${port}`));
