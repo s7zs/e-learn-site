@@ -1,22 +1,22 @@
+require('dotenv').config(); // Load environment variables from .env file
 const express = require('express');
 const app = express();
 const path = require('path');
-const  { logger } = require('./middleware/logger.js')
-const port = process.env.PORT || 5500;
-
-app.use(logger)
-
-
-app.use(express.json())
+const { logger } = require('./middleware/logger.js'); 
+const errorhandler = require('./middleware/Errorhandler.js')
+const cookieparser = require('cookie-parser');
+const cors = require('cors');
+const corseOption = require('./config/corseOption.js'); 
+const port = process.env.PORT || 3000;
+console.log(process.env.TRY_ENV)
+app.use(logger); 
+app.use(cors(corseOption));
+app.use(cookieparser());
+app.use(express.json());
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.listen(port, () => console.log(`  server running on port ${port}`));
 const rootrouter= require('./routers/root.js');
 app.use('/', rootrouter);
-
-
-    
-app.listen(port, () => console.log(`Server running on port ${port}`));
 
 app.all('*', (req, res) => {
     res.status(404);
@@ -30,3 +30,5 @@ app.all('*', (req, res) => {
     }
     
 })
+app.use(errorhandler);
+app.listen(port, () => console.log(`Server running on port ${port}`));
