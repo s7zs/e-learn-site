@@ -1,0 +1,12 @@
+2025-03-15 07:03:56	df395e45-ae3a-4431-88c2-6c8dbcad2705	CORS error: Origin https://www.google.com not allowed
+2025-03-15 07:03:56	654728c3-f7d1-4f04-bb52-c52c01595f68	Error: 	Not allowed by CORS 	OPTIONS 	/ 	https://www.google.com
+2025-03-15 07:03:56	f82820f5-fd3d-4089-857e-528feba96dfd	CORS error: Origin https://www.google.com not allowed
+2025-03-15 07:03:56	404242ab-dcd7-4967-bb52-32dd14b6130a	Error: 	Not allowed by CORS 	GET 	/ 	https://www.google.com
+2025-03-15 07:04:53	4564a2f7-14e9-4ede-aba7-c44737fcb7df	Error: 	Not allowed by CORS 	OPTIONS 	/ 	https://www.google.com
+2025-03-15 07:04:53	555bacb3-d5d2-46fd-a373-4c0c85fc7214	Error: 	Not allowed by CORS 	GET 	/ 	https://www.google.com
+2025-03-16 16:22:44	23b874d4-7062-46a1-9652-f1c54607b9af	Error: 	Not allowed by CORS 	OPTIONS 	/ 	https://www.google.com
+2025-03-16 16:22:44	7ad7278c-e4b8-4167-a34d-7fa8f8643b7b	Error: 	Not allowed by CORS 	GET 	/ 	https://www.google.com
+2025-03-16 16:22:44	446ad11d-0df8-4452-bae3-e44848adbcde	Error: 	Not allowed by CORS 	OPTIONS 	/ 	https://www.google.com
+2025-03-16 16:22:44	47a87f8c-67fc-48e8-8085-e6c2344de349	Error: 	Not allowed by CORS 	GET 	/ 	https://www.google.com
+2025-03-16 16:24:38	8f784a6d-2b43-4498-ad4a-498845d3f41e	Error: 	Not allowed by CORS 	OPTIONS 	/ 	https://www.bing.com
+2025-03-16 16:24:38	5e08ade0-d8e7-4243-b928-2274dd94f879	Error: 	Not allowed by CORS 	GET 	/ 	https://www.bing.com
